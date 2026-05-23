@@ -41,7 +41,6 @@
       background: var(--bg);
       color: var(--text-primary);
       line-height: 1.6;
-      /* grid texture from the app */
       background-image:
         linear-gradient(var(--border-light) 1px, transparent 1px),
         linear-gradient(90deg, var(--border-light) 1px, transparent 1px);
@@ -74,19 +73,14 @@
       color: var(--text-muted); letter-spacing: 0.12em;
       text-transform: uppercase; font-weight: 400;
     }
-    .nav-pills {
-      display: flex; align-items: center; gap: 8px;
-    }
+    .nav-pills { display: flex; align-items: center; gap: 8px; }
     .pill {
       font-family: var(--mono); font-size: 0.72rem;
       background: var(--bg-card2); border: 1px solid var(--border);
       border-radius: 20px; padding: 3px 10px;
       color: var(--text-sec);
     }
-    .pill-blue {
-      background: var(--tag-bg); color: var(--tag-text);
-      border-color: #bdd3f7;
-    }
+    .pill-blue { background: var(--tag-bg); color: var(--tag-text); border-color: #bdd3f7; }
     .nav-cta {
       background: var(--accent-grad);
       color: #fff; border: none; border-radius: var(--radius);
@@ -97,11 +91,7 @@
     .nav-cta:hover { opacity: .88; transform: translateY(-1px); }
 
     /* ── Hero ────────────────────────────────────────────────── */
-    .hero {
-      max-width: 960px; margin: 0 auto;
-      padding: 80px 2rem 60px;
-      text-align: center;
-    }
+    .hero { max-width: 960px; margin: 0 auto; padding: 80px 2rem 60px; text-align: center; }
     .hero-badge {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--bg-card2); border: 1px solid var(--border);
@@ -110,406 +100,151 @@
       color: var(--text-sec); margin-bottom: 28px;
       animation: fadeDown .5s ease both;
     }
-    .hero-badge .dot {
-      width: 6px; height: 6px; border-radius: 50%;
-      background: var(--green); display: inline-block;
-    }
+    .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); display: inline-block; }
     h1 {
-      font-size: clamp(2.2rem, 5vw, 3.4rem);
-      font-weight: 700; line-height: 1.15;
-      color: var(--text-primary);
-      letter-spacing: -0.02em;
+      font-size: clamp(2.2rem, 5vw, 3.4rem); font-weight: 700; line-height: 1.15;
+      color: var(--text-primary); letter-spacing: -0.02em;
       animation: fadeDown .5s .1s ease both;
     }
     h1 span { color: var(--accent-blue); }
-    .hero-sub {
-      max-width: 580px; margin: 20px auto 0;
-      font-size: 1.05rem; color: var(--text-sec);
-      animation: fadeDown .5s .2s ease both;
-    }
-    .hero-actions {
-      display: flex; align-items: center; justify-content: center;
-      gap: 12px; margin-top: 36px; flex-wrap: wrap;
-      animation: fadeDown .5s .3s ease both;
-    }
+    .hero-sub { max-width: 580px; margin: 20px auto 0; font-size: 1.05rem; color: var(--text-sec); animation: fadeDown .5s .2s ease both; }
+    .hero-actions { display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 36px; flex-wrap: wrap; animation: fadeDown .5s .3s ease both; }
     .btn-primary {
-      background: var(--accent-grad);
-      color: #fff; border: none; border-radius: var(--radius);
-      padding: 13px 28px; font-size: 0.95rem; font-weight: 600;
-      cursor: pointer; text-decoration: none;
-      display: inline-flex; align-items: center; gap: 8px;
-      box-shadow: 0 4px 16px rgba(59,125,232,.35);
+      background: var(--accent-grad); color: #fff; border: none; border-radius: var(--radius);
+      padding: 13px 28px; font-size: 0.95rem; font-weight: 600; cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 16px rgba(59,125,232,.35);
       transition: opacity .15s, transform .15s, box-shadow .15s;
     }
-    .btn-primary:hover {
-      opacity: .9; transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(59,125,232,.45);
-    }
+    .btn-primary:hover { opacity: .9; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(59,125,232,.45); }
     .btn-secondary {
-      background: var(--bg-card2); color: var(--text-primary);
-      border: 1px solid var(--border); border-radius: var(--radius);
-      padding: 13px 24px; font-size: 0.95rem; font-weight: 500;
-      cursor: pointer; text-decoration: none;
-      display: inline-flex; align-items: center; gap: 8px;
-      transition: background .15s, transform .15s;
+      background: var(--bg-card2); color: var(--text-primary); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 13px 24px; font-size: 0.95rem; font-weight: 500; cursor: pointer; text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px; transition: background .15s, transform .15s;
     }
     .btn-secondary:hover { background: var(--border-light); transform: translateY(-1px); }
 
     /* ── Stats row ───────────────────────────────────────────── */
-    .stats {
-      display: flex; justify-content: center; gap: 0;
-      flex-wrap: wrap; margin-top: 56px;
-      animation: fadeUp .5s .4s ease both;
-    }
-    .stat {
-      padding: 20px 36px; text-align: center;
-      border-right: 1px solid var(--border);
-    }
+    .stats { display: flex; justify-content: center; gap: 0; flex-wrap: wrap; margin-top: 56px; animation: fadeUp .5s .4s ease both; }
+    .stat { padding: 20px 36px; text-align: center; border-right: 1px solid var(--border); }
     .stat:last-child { border-right: none; }
-    .stat-n {
-      font-family: var(--mono); font-size: 2rem; font-weight: 500;
-      color: var(--accent-blue); display: block; line-height: 1;
-    }
-    .stat-l {
-      font-size: 0.78rem; color: var(--text-muted);
-      text-transform: uppercase; letter-spacing: .08em;
-      margin-top: 4px; display: block;
-    }
+    .stat-n { font-family: var(--mono); font-size: 2rem; font-weight: 500; color: var(--accent-blue); display: block; line-height: 1; }
+    .stat-l { font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: .08em; margin-top: 4px; display: block; }
 
     /* ── Section wrapper ─────────────────────────────────────── */
-    section {
-      max-width: 960px; margin: 0 auto;
-      padding: 64px 2rem;
-    }
-    .section-label {
-      font-family: var(--mono); font-size: 0.7rem;
-      letter-spacing: .14em; text-transform: uppercase;
-      color: var(--text-muted); margin-bottom: 12px;
-    }
-    .section-title {
-      font-size: clamp(1.5rem, 3vw, 2rem);
-      font-weight: 700; color: var(--text-primary);
-      letter-spacing: -0.02em; margin-bottom: 8px;
-    }
-    .section-sub {
-      font-size: 0.95rem; color: var(--text-sec);
-      max-width: 560px; margin-bottom: 40px;
-    }
-    hr.divider {
-      border: none; border-top: 1px solid var(--border);
-      max-width: 960px; margin: 0 auto;
-    }
+    section { max-width: 960px; margin: 0 auto; padding: 64px 2rem; }
+    .section-label { font-family: var(--mono); font-size: 0.7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 12px; }
+    .section-title { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; margin-bottom: 8px; }
+    .section-sub { font-size: 0.95rem; color: var(--text-sec); max-width: 560px; margin-bottom: 40px; }
+    hr.divider { border: none; border-top: 1px solid var(--border); max-width: 960px; margin: 0 auto; }
 
     /* ── Problem section ─────────────────────────────────────── */
-    .problem-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 16px;
-    }
-    .problem-card {
-      background: var(--bg-card2); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 20px 22px;
-      box-shadow: var(--shadow);
-      transition: transform .18s, box-shadow .18s;
-    }
+    .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .problem-card { background: var(--bg-card2); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 22px; box-shadow: var(--shadow); transition: transform .18s, box-shadow .18s; }
     .problem-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
-    .problem-card .icon {
-      font-size: 1.4rem; margin-bottom: 10px; display: block;
-    }
-    .problem-card h3 {
-      font-size: 0.9rem; font-weight: 600;
-      color: var(--text-primary); margin-bottom: 6px;
-    }
-    .problem-card p {
-      font-size: 0.83rem; color: var(--text-sec); line-height: 1.5;
-    }
-    .problem-card code {
-      font-family: var(--mono); font-size: 0.78rem;
-      background: var(--accent-light); color: var(--accent-blue);
-      padding: 1px 5px; border-radius: 4px;
-    }
-    .severity-badge {
-      display: inline-block; font-family: var(--mono);
-      font-size: 0.65rem; font-weight: 500;
-      padding: 2px 8px; border-radius: 4px;
-      margin-bottom: 8px; letter-spacing: .06em;
-    }
+    .problem-card .icon { font-size: 1.4rem; margin-bottom: 10px; display: block; }
+    .problem-card h3 { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 6px; }
+    .problem-card p { font-size: 0.83rem; color: var(--text-sec); line-height: 1.5; }
+    .problem-card code { font-family: var(--mono); font-size: 0.78rem; background: var(--accent-light); color: var(--accent-blue); padding: 1px 5px; border-radius: 4px; }
+    .severity-badge { display: inline-block; font-family: var(--mono); font-size: 0.65rem; font-weight: 500; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; letter-spacing: .06em; }
     .sev-crit { background: #fee2e2; color: #b91c1c; }
     .sev-maj  { background: #fef3c7; color: #92400e; }
     .sev-min  { background: #d1fae5; color: #065f46; }
 
     /* ── How it works ────────────────────────────────────────── */
-    .steps {
-      display: flex; flex-direction: column; gap: 0;
-      position: relative;
-    }
-    .steps::before {
-      content: ''; position: absolute;
-      left: 22px; top: 28px; bottom: 28px;
-      width: 2px; background: var(--border);
-    }
-    .step {
-      display: flex; gap: 20px; align-items: flex-start;
-      padding: 20px 0;
-    }
+    .steps { display: flex; flex-direction: column; gap: 0; position: relative; }
+    .steps::before { content: ''; position: absolute; left: 22px; top: 28px; bottom: 28px; width: 2px; background: var(--border); }
+    .step { display: flex; gap: 20px; align-items: flex-start; padding: 20px 0; }
     .step-num {
-      width: 46px; height: 46px; min-width: 46px;
-      border-radius: 50%;
+      width: 46px; height: 46px; min-width: 46px; border-radius: 50%;
       background: var(--bg-card2); border: 2px solid var(--border);
       display: flex; align-items: center; justify-content: center;
       font-family: var(--mono); font-size: 0.85rem; font-weight: 500;
       color: var(--accent-blue); position: relative; z-index: 1;
       transition: border-color .2s, background .2s;
     }
-    .step:hover .step-num {
-      border-color: var(--accent-blue);
-      background: var(--accent-light);
-    }
+    .step:hover .step-num { border-color: var(--accent-blue); background: var(--accent-light); }
     .step-body { padding-top: 10px; }
-    .step-body h3 {
-      font-size: 0.95rem; font-weight: 600;
-      color: var(--text-primary); margin-bottom: 4px;
-    }
-    .step-body p {
-      font-size: 0.84rem; color: var(--text-sec); line-height: 1.55;
-    }
-    .step-body code {
-      font-family: var(--mono); font-size: 0.78rem;
-      background: var(--bg-card); border: 1px solid var(--border);
-      padding: 1px 6px; border-radius: 4px; color: var(--text-primary);
-    }
+    .step-body h3 { font-size: 0.95rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+    .step-body p { font-size: 0.84rem; color: var(--text-sec); line-height: 1.55; }
+    .step-body code { font-family: var(--mono); font-size: 0.78rem; background: var(--bg-card); border: 1px solid var(--border); padding: 1px 6px; border-radius: 4px; color: var(--text-primary); }
 
     /* ── AI section ──────────────────────────────────────────── */
-    .ai-card {
-      background: var(--bg-card2); border: 1px solid var(--border);
-      border-radius: var(--radius); overflow: hidden;
-      box-shadow: var(--shadow);
-      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
-    }
-    .ai-left {
-      padding: 32px; border-right: 1px solid var(--border);
-    }
-    .ai-left h3 {
-      font-size: 1.05rem; font-weight: 600;
-      color: var(--text-primary); margin-bottom: 16px;
-    }
-    .ai-feature {
-      display: flex; gap: 10px; align-items: flex-start;
-      margin-bottom: 14px;
-    }
-    .ai-feature .af-icon {
-      width: 28px; height: 28px; min-width: 28px;
-      border-radius: 6px; background: var(--accent-light);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 13px;
-    }
-    .ai-feature div p {
-      font-size: 0.8rem; color: var(--text-sec); line-height: 1.45;
-    }
-    .ai-feature div strong {
-      font-size: 0.85rem; color: var(--text-primary);
-      display: block; margin-bottom: 2px;
-    }
-    .ai-right {
-      padding: 24px; background: var(--bg-card);
-      display: flex; flex-direction: column; gap: 10px;
-    }
-    .json-block {
-      background: #1e2a3a; border-radius: 8px;
-      padding: 16px; font-family: var(--mono);
-      font-size: 0.72rem; line-height: 1.6; color: #a8b8cc;
-      overflow: hidden; flex: 1;
-    }
+    .ai-card { background: var(--bg-card2); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .ai-left { padding: 32px; border-right: 1px solid var(--border); }
+    .ai-left h3 { font-size: 1.05rem; font-weight: 600; color: var(--text-primary); margin-bottom: 16px; }
+    .ai-feature { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 14px; }
+    .ai-feature .af-icon { width: 28px; height: 28px; min-width: 28px; border-radius: 6px; background: var(--accent-light); display: flex; align-items: center; justify-content: center; font-size: 13px; }
+    .ai-feature div p { font-size: 0.8rem; color: var(--text-sec); line-height: 1.45; }
+    .ai-feature div strong { font-size: 0.85rem; color: var(--text-primary); display: block; margin-bottom: 2px; }
+    .ai-right { padding: 24px; background: var(--bg-card); display: flex; flex-direction: column; gap: 10px; }
+    .json-block { background: #1e2a3a; border-radius: 8px; padding: 16px; font-family: var(--mono); font-size: 0.72rem; line-height: 1.6; color: #a8b8cc; overflow: hidden; flex: 1; }
     .json-block .jk  { color: #79b8ff; }
     .json-block .jv  { color: #9ecbff; }
     .json-block .jn  { color: #f97583; }
     .json-block .js  { color: #85e89d; }
     .json-block .jc  { color: #6a737d; font-style: italic; }
-    .model-tag {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: var(--tag-bg); border: 1px solid #bdd3f7;
-      border-radius: 6px; padding: 5px 10px;
-      font-family: var(--mono); font-size: 0.7rem; color: var(--tag-text);
-    }
+    .model-tag { display: inline-flex; align-items: center; gap: 6px; background: var(--tag-bg); border: 1px solid #bdd3f7; border-radius: 6px; padding: 5px 10px; font-family: var(--mono); font-size: 0.7rem; color: var(--tag-text); }
     .model-tag .dot { width:5px; height:5px; border-radius:50%; background:var(--green); }
 
     /* ── Rules preview ───────────────────────────────────────── */
-    .rules-grid {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-    }
-    .rule-card {
-      background: var(--bg-card2); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 16px 18px;
-      box-shadow: var(--shadow);
-      transition: transform .15s, box-shadow .15s;
-    }
+    .rules-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .rule-card { background: var(--bg-card2); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow); transition: transform .15s, box-shadow .15s; }
     .rule-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
-    .rule-card .rule-id {
-      font-family: var(--mono); font-size: 0.7rem;
-      color: var(--accent-blue); margin-bottom: 6px; display: block;
-    }
-    .rule-card h4 {
-      font-size: 0.85rem; font-weight: 600;
-      color: var(--text-primary); margin-bottom: 4px;
-    }
-    .rule-card p {
-      font-size: 0.78rem; color: var(--text-sec); line-height: 1.45;
-    }
-    .rule-more {
-      grid-column: 1/-1; text-align: center;
-      padding: 16px;
-      font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted);
-    }
+    .rule-card .rule-id { font-family: var(--mono); font-size: 0.7rem; color: var(--accent-blue); margin-bottom: 6px; display: block; }
+    .rule-card h4 { font-size: 0.85rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+    .rule-card p { font-size: 0.78rem; color: var(--text-sec); line-height: 1.45; }
+    .rule-more { grid-column: 1/-1; text-align: center; padding: 16px; font-family: var(--mono); font-size: 0.78rem; color: var(--text-muted); }
 
     /* ── Result section ──────────────────────────────────────── */
-    .result-mockup {
-      background: var(--bg-card2); border: 1px solid var(--border);
-      border-radius: var(--radius); overflow: hidden;
-      box-shadow: var(--shadow-lg);
-    }
-    .mockup-header {
-      background: var(--bg-card); border-bottom: 1px solid var(--border);
-      padding: 10px 16px; display: flex;
-      align-items: center; justify-content: space-between;
-    }
-    .mockup-header span {
-      font-family: var(--mono); font-size: 0.72rem; color: var(--text-muted);
-    }
-    .mockup-score-row {
-      display: grid; grid-template-columns: repeat(4,1fr);
-      gap: 0; border-bottom: 1px solid var(--border);
-    }
-    .score-cell {
-      padding: 22px 20px; text-align: center;
-      border-right: 1px solid var(--border);
-    }
+    .result-mockup { background: var(--bg-card2); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
+    .mockup-header { background: var(--bg-card); border-bottom: 1px solid var(--border); padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; }
+    .mockup-header span { font-family: var(--mono); font-size: 0.72rem; color: var(--text-muted); }
+    .mockup-score-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; border-bottom: 1px solid var(--border); }
+    .score-cell { padding: 22px 20px; text-align: center; border-right: 1px solid var(--border); }
     .score-cell:last-child { border-right: none; }
-    .score-n {
-      font-family: var(--mono); font-size: 2rem; font-weight: 500;
-      line-height: 1; display: block;
-    }
-    .score-l {
-      font-size: 0.72rem; text-transform: uppercase;
-      letter-spacing: .08em; color: var(--text-muted);
-      margin-top: 4px; display: block;
-    }
+    .score-n { font-family: var(--mono); font-size: 2rem; font-weight: 500; line-height: 1; display: block; }
+    .score-l { font-size: 0.72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-top: 4px; display: block; }
     .score-main { color: var(--accent-blue); }
     .score-crit { color: var(--red); }
     .score-maj  { color: var(--orange); }
     .score-min  { color: var(--green); }
-    .finding-row {
-      border-bottom: 1px solid var(--border-light);
-      padding: 14px 20px; display: flex;
-      align-items: flex-start; gap: 12px;
-    }
+    
+    .mockup-findings { padding: 8px 0; }
+    .finding-row { border-bottom: 1px solid var(--border-light); padding: 14px 20px; display: flex; align-items: flex-start; gap: 12px; }
     .finding-row:last-child { border-bottom: none; }
-    .finding-sev {
-      font-family: var(--mono); font-size: 0.65rem; font-weight: 500;
-      padding: 3px 8px; border-radius: 4px; white-space: nowrap;
-      margin-top: 2px;
-    }
+    .finding-sev { font-family: var(--mono); font-size: 0.65rem; font-weight: 500; padding: 3px 8px; border-radius: 4px; white-space: nowrap; margin-top: 2px; }
     .finding-body { flex: 1; }
-    .finding-body strong {
-      font-size: 0.88rem; color: var(--text-primary); display: block;
-    }
-    .finding-body p {
-      font-size: 0.78rem; color: var(--text-sec); margin-top: 2px;
-    }
-    .finding-body code {
-      font-family: var(--mono); font-size: 0.75rem;
-      background: var(--bg-card); border: 1px solid var(--border);
-      padding: 1px 5px; border-radius: 3px; color: var(--text-sec);
-    }
-    .finding-ref {
-      font-family: var(--mono); font-size: 0.67rem;
-      color: var(--text-muted); white-space: nowrap;
-      margin-top: 4px;
-    }
+    .finding-body strong { font-size: 0.88rem; color: var(--text-primary); display: block; }
+    .finding-body p { font-size: 0.78rem; color: var(--text-sec); margin-top: 2px; }
+    .finding-body code { font-family: var(--mono); font-size: 0.75rem; background: var(--bg-card); border: 1px solid var(--border); padding: 1px 5px; border-radius: 3px; color: var(--text-sec); }
+    .finding-ref { font-family: var(--mono); font-size: 0.67rem; color: var(--text-muted); white-space: nowrap; margin-top: 4px; }
 
-    /* ── Deploy section ──────────────────────────────────────── */
-    .deploy-steps {
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: 16px; margin-top: 32px;
-    }
-    .deploy-card {
-      background: var(--bg-card2); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 22px;
-      box-shadow: var(--shadow);
-    }
-    .deploy-card .step-n {
-      font-family: var(--mono); font-size: 0.65rem;
-      color: var(--text-muted); letter-spacing: .1em;
-      text-transform: uppercase; margin-bottom: 10px; display: block;
-    }
-    .deploy-card h3 {
-      font-size: 0.92rem; font-weight: 600;
-      color: var(--text-primary); margin-bottom: 8px;
-    }
-    .deploy-card p {
-      font-size: 0.82rem; color: var(--text-sec);
-      line-height: 1.5; margin-bottom: 10px;
-    }
-    .code-snippet {
-      background: #1e2a3a; border-radius: 6px;
-      padding: 10px 14px; font-family: var(--mono);
-      font-size: 0.72rem; color: #a8b8cc; line-height: 1.7;
-      overflow-x: auto;
-    }
-    .code-snippet .cmd { color: #79b8ff; }
-    .code-snippet .arg { color: #85e89d; }
-    .code-snippet .cmt { color: #6a737d; font-style: italic; }
+    /* ── Acknowledgments section ─────────────────────────────── */
+    .ack-card { background: var(--bg-card2); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+    .ack-text { font-size: 0.92rem; color: var(--text-sec); line-height: 1.65; }
 
     /* ── CTA footer ──────────────────────────────────────────── */
-    .cta-section {
-      text-align: center; padding: 80px 2rem;
-      background: linear-gradient(180deg, transparent 0%, rgba(59,125,232,.04) 100%);
-      border-top: 1px solid var(--border);
-    }
-    .cta-section h2 {
-      font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700;
-      letter-spacing: -0.02em; margin-bottom: 12px;
-    }
-    .cta-section p {
-      color: var(--text-sec); font-size: 1rem;
-      max-width: 480px; margin: 0 auto 32px;
-    }
+    .cta-section { text-align: center; padding: 80px 2rem; background: linear-gradient(180deg, transparent 0%, rgba(59,125,232,.04) 100%); border-top: 1px solid var(--border); }
+    .cta-section h2 { font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .cta-section p { color: var(--text-sec); font-size: 1rem; max-width: 480px; margin: 0 auto 32px; }
 
     /* ── Footer ──────────────────────────────────────────────── */
-    footer {
-      border-top: 1px solid var(--border);
-      padding: 24px 2rem;
-      display: flex; align-items: center; justify-content: space-between;
-      max-width: 960px; margin: 0 auto;
-      font-size: 0.8rem; color: var(--text-muted);
-      flex-wrap: wrap; gap: 8px;
-    }
+    footer { border-top: 1px solid var(--border); padding: 24px 2rem; display: flex; align-items: center; justify-content: space-between; max-width: 960px; margin: 0 auto; font-size: 0.8rem; color: var(--text-muted); flex-wrap: wrap; gap: 8px; }
     footer a { color: var(--text-muted); text-decoration: none; }
     footer a:hover { color: var(--accent-blue); }
     footer .f-mono { font-family: var(--mono); font-size: 0.72rem; }
 
     /* ── Animations ──────────────────────────────────────────── */
-    @keyframes fadeDown {
-      from { opacity:0; transform:translateY(-12px); }
-      to   { opacity:1; transform:translateY(0); }
-    }
-    @keyframes fadeUp {
-      from { opacity:0; transform:translateY(12px); }
-      to   { opacity:1; transform:translateY(0); }
-    }
-    .reveal {
-      opacity: 0; transform: translateY(18px);
-      transition: opacity .5s ease, transform .5s ease;
-    }
-    .reveal.visible { opacity:1; transform:translateY(0); }
+    @keyframes fadeDown { from { opacity:0; transform:translateY(-12px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+    .reveal { opacity: 1; transform: none; } /* Kept clean for base rendering */
 
-    /* ── Responsive ──────────────────────────────────────────── */
     @media (max-width: 700px) {
       .problem-grid { grid-template-columns: 1fr; }
       .rules-grid   { grid-template-columns: 1fr 1fr; }
       .ai-card      { grid-template-columns: 1fr; }
       .ai-right     { display: none; }
       .mockup-score-row { grid-template-columns: 1fr 1fr; }
-      .deploy-steps { grid-template-columns: 1fr; }
       .stat         { border-right: none; border-bottom: 1px solid var(--border); }
       .stats        { flex-direction: column; align-items: center; }
       nav .nav-pills { display: none; }
@@ -518,7 +253,6 @@
 </head>
 <body>
 
-<!-- ── NAV ──────────────────────────────────────────────────── -->
 <nav>
   <a class="nav-brand" href="#">
     <div class="nav-icon">🔐</div>
@@ -537,7 +271,6 @@
   </a>
 </nav>
 
-<!-- ── HERO ─────────────────────────────────────────────────── -->
 <div class="hero">
   <div class="hero-badge">
     <span class="dot"></span>
@@ -580,7 +313,6 @@
 
 <hr class="divider" />
 
-<!-- ── PROBLEM ──────────────────────────────────────────────── -->
 <section class="reveal">
   <div class="section-label">Le problème</div>
   <div class="section-title">Les apps Android malmènent la cryptographie</div>
@@ -634,7 +366,6 @@
 
 <hr class="divider" />
 
-<!-- ── HOW IT WORKS ──────────────────────────────────────────── -->
 <section id="how-it-works" class="reveal">
   <div class="section-label">Pipeline</div>
   <div class="section-title">Comment ça marche</div>
@@ -647,7 +378,7 @@
       <div class="step-body">
         <h3>Soumission — APK, Java ou Kotlin</h3>
         <p>
-          Envoyez un fichier via l'interface ou <code>POST /api/analyze</code>.
+          Enviez un fichier via l'interface ou <code>POST /api/analyze</code>.
           Aucun build system requis, aucun accès au code source du projet nécessaire.
           Formats acceptés : <code>.apk</code>, <code>.java</code>, <code>.kt</code>,
           ou code brut en JSON.
@@ -708,7 +439,6 @@
 
 <hr class="divider" />
 
-<!-- ── AI SECTION ────────────────────────────────────────────── -->
 <section class="reveal">
   <div class="section-label">Implémentation IA</div>
   <div class="section-title">LLM au-dessus du statique, pas à la place</div>
@@ -785,7 +515,6 @@
 
 <hr class="divider" />
 
-<!-- ── RULES ─────────────────────────────────────────────────── -->
 <section class="reveal">
   <div class="section-label">Catalogue de règles</div>
   <div class="section-title">16 règles, 7 catégories, 0 config</div>
@@ -838,7 +567,6 @@
 
 <hr class="divider" />
 
-<!-- ── RESULT MOCKUP ──────────────────────────────────────────── -->
 <section class="reveal">
   <div class="section-label">Résultat</div>
   <div class="section-title">Ce que vous obtenez après l'audit</div>
@@ -854,52 +582,37 @@
     <div class="mockup-score-row">
       <div class="score-cell">
         <span class="score-n score-main">95</span>
-        <span class="score-l">Risk Score</span>
+        <span class="score-l">Score de Risque</span>
       </div>
       <div class="score-cell">
-        <span class="score-n score-crit">2</span>
-        <span class="score-l">Critique</span>
+        <span class="score-n score-crit">3</span>
+        <span class="score-l">Critiques</span>
       </div>
       <div class="score-cell">
-        <span class="score-n score-maj">1</span>
-        <span class="score-l">Majeur</span>
+        <span class="score-n score-orange">2</span>
+        <span class="score-l">Majeurs</span>
       </div>
       <div class="score-cell">
-        <span class="score-n score-min">0</span>
-        <span class="score-l">Mineur</span>
+        <span class="score-n score-green">1</span>
+        <span class="score-l">Mineurs</span>
       </div>
     </div>
-    <div class="finding-row">
-      <span class="finding-sev sev-crit">CRITIQUE</span>
-      <div class="finding-body">
-        <strong>AES sans mode spécifié (ECB par défaut)</strong>
-        <p>
-          <code>Cipher.getInstance("AES")</code> ligne 42 —
-          ECB ne fournit aucune confidentialité sémantique.
-        </p>
-        <div class="finding-ref">CWE-327 · NIST SP 800-38A · MSTG-CRYPTO-2</div>
+    <div class="mockup-findings">
+      <div class="finding-row">
+        <span class="finding-sev sev-crit">CRITIQUE</span>
+        <div class="finding-body">
+          <strong>AES_ECB — Insecure cipher mode (ECB default)</strong>
+          <p>Trouvé à la ligne 42 dans <code>MainActivity.java</code> : <code>Cipher.getInstance("AES")</code></p>
+        </div>
+        <span class="finding-ref">CWE-327</span>
       </div>
-    </div>
-    <div class="finding-row">
-      <span class="finding-sev sev-crit">CRITIQUE</span>
-      <div class="finding-body">
-        <strong>Clé cryptographique hardcodée dans le bytecode</strong>
-        <p>
-          <code>SecretKeySpec("statickey1234567".getBytes(), "AES")</code> ligne 98 —
-          extractible via jadx en quelques secondes.
-        </p>
-        <div class="finding-ref">CWE-321 · OWASP M1 · MSTG-CRYPTO-1</div>
-      </div>
-    </div>
-    <div class="finding-row">
-      <span class="finding-sev sev-maj">MAJEUR</span>
-      <div class="finding-body">
-        <strong>Padding PKCS#5/7 avec mode non-AEAD</strong>
-        <p>
-          <code>PKCS5Padding</code> combiné avec CBC — vulnérable aux
-          attaques padding oracle (POODLE, BEAST).
-        </p>
-        <div class="finding-ref">CWE-649 · CVE-2016-2183 · MSTG-CRYPTO-2</div>
+      <div class="finding-row">
+        <span class="finding-sev sev-crit">CRITIQUE</span>
+        <div class="finding-body">
+          <strong>HARDCODED_KEY — Hardcoded cryptographic key</strong>
+          <p>Trouvé à la ligne 55 dans <code>CryptoUtils.java</code> : <code>new SecretKeySpec(bytes, "AES")</code></p>
+        </div>
+        <span class="finding-ref">CWE-321</span>
       </div>
     </div>
   </div>
@@ -907,100 +620,29 @@
 
 <hr class="divider" />
 
-<!-- ── DEPLOY ────────────────────────────────────────────────── -->
 <section class="reveal">
-  <div class="section-label">Installation</div>
-  <div class="section-title">Opérationnel en 3 commandes</div>
-  <p class="section-sub">
-    Aucun build system, aucune compilation. Python 3.10+ et Java 11+
-    suffisent. Optionnel : clé Featherless AI pour les features LLM.
-  </p>
-  <div class="deploy-steps">
-    <div class="deploy-card">
-      <span class="step-n">Étape 01</span>
-      <h3>Cloner et installer</h3>
-      <p>Clonez le repo et installez les dépendances Python en une commande.</p>
-      <div class="code-snippet">
-<span class="cmd">git</span> <span class="arg">clone</span>
-  github.com/itsnoha0x/
-  CryptoLint-AI
-<span class="cmd">cd</span> CryptoLint-AI
-<span class="cmd">pip</span> <span class="arg">install</span> -r requirements.txt
-      </div>
-    </div>
-    <div class="deploy-card">
-      <span class="step-n">Étape 02</span>
-      <h3>Configurer (optionnel)</h3>
-      <p>Ajoutez votre clé Featherless AI pour activer l'analyse LLM. Sans clé, le mode statique reste complet.</p>
-      <div class="code-snippet">
-<span class="cmt"># Créer .env</span>
-FEATHERLESS_API_KEY=<span class="arg">votre_clé</span>
-<span class="cmt"># Optionnel :</span>
-JADX_PATH=<span class="arg">/usr/local/bin/jadx</span>
-      </div>
-    </div>
-    <div class="deploy-card">
-      <span class="step-n">Étape 03</span>
-      <h3>Lancer et auditer</h3>
-      <p>Démarrez le backend et soumettez votre premier APK via l'interface ou l'API REST.</p>
-      <div class="code-snippet">
-<span class="cmd">python</span> app.py
-<span class="cmt"># → http://localhost:5000</span>
-
-<span class="cmt"># Ou via curl :</span>
-<span class="cmd">curl</span> -X POST
-  localhost:5000/api/analyze
-  -F <span class="arg">"file=@app.apk"</span>
-      </div>
-    </div>
+  <div class="section-label">Remerciements</div>
+  <div class="section-title">Contribution et Soutien</div>
+  <p class="section-sub">Ce projet académique a été rendu possible grâce au travail d'équipe et aux ressources open-source de la communauté de sécurité applicative.</p>
+  <div class="ack-card">
+    <p class="ack-text">
+      The author extends sincere gratitude to the project teammates, <strong>[Teammate 1 Name]</strong>, <strong>[Teammate 2 Name]</strong>, and <strong>[Teammate 3 Name]</strong>, for their shared dedication and collaborative effort throughout the project development. Special thanks are also due to the faculty supervisor, <strong>[Supervisor Title & Name]</strong>, at <strong>ENSA Marrakech</strong>, for providing invaluable guidance and academic support. Additionally, the OWASP Mobile Security Testing Guide project is acknowledged for providing the UnCrackable and AndroGoat benchmark APKs used in tool validation.
+    </p>
   </div>
 </section>
 
-<!-- ── CTA ───────────────────────────────────────────────────── -->
-<div class="cta-section reveal">
-  <h2>Prêt à auditer votre premier APK ?</h2>
-  <p>
-    Open source, MIT License, aucune donnée stockée.
-    Votre code reste le vôtre.
-  </p>
-  <div class="hero-actions">
-    <a class="btn-primary" href="https://github.com/itsnoha0x/CryptoLint-AI" target="_blank">
-      ⚡ Voir sur GitHub
-    </a>
-    <a class="btn-secondary" href="https://github.com/itsnoha0x/CryptoLint-AI/blob/main/README.md" target="_blank">
-      📖 Documentation
-    </a>
-  </div>
+<div class="cta-section">
+  <h2>Prêt à auditer vos applications ?</h2>
+  <p>CryptoLint AI est entièrement open-source et extensible. Intégrez-le dans vos pipelines CI/CD dès maintenant.</p>
+  <a class="btn-primary" href="https://github.com/itsnoha0x/CryptoLint-AI" target="_blank">🚀 Commencer sur GitHub</a>
 </div>
 
-<!-- ── FOOTER ────────────────────────────────────────────────── -->
 <footer>
-  <div>
-    🔐 <strong>CryptoLint AI</strong> —
-    Projet académique ENSA Marrakech
+  <div>&copy; 2026 CryptoLint AI. Développé à l'ENSA Marrakech.</div>
+  <div class="f-mono">
+    <a href="https://github.com/itsnoha0x/CryptoLint-AI" target="_blank">Open Source (MIT)</a>
   </div>
-  <div>
-    <a href="https://github.com/itsnoha0x/CryptoLint-AI" target="_blank">GitHub</a>
-    &nbsp;·&nbsp;
-    <a href="https://github.com/itsnoha0x/CryptoLint-AI/blob/main/README.md" target="_blank">Docs</a>
-    &nbsp;·&nbsp;
-    <a href="https://github.com/itsnoha0x/CryptoLint-AI/blob/main/LICENSE" target="_blank">MIT License</a>
-  </div>
-  <div class="f-mono">v1.0.0 · Python/Flask · Qwen2.5-Coder-32B</div>
 </footer>
 
-<script>
-  // Scroll reveal
-  const observer = new IntersectionObserver(
-    entries => entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.classList.add('visible');
-        observer.unobserve(e.target);
-      }
-    }),
-    { threshold: 0.1 }
-  );
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-</script>
 </body>
 </html>
