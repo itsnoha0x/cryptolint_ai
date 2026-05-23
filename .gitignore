@@ -1,0 +1,18 @@
+# Environments
+venv/
+env/
+.venv/
+
+# Sensitive data
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+
+# Jadx output
+backend/decompiled/
+
+# OS files
+.DS_Store
+Thumbs.db
